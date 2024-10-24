@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title "Toutes les recettes" %}
+
+{% block body %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad dicta doloremque dolorum enim
+        exercitationem facere fugiat iste laboriosam laborum necessitatibus nostrum, odit officiis, perspiciatis quae,
+        quas quia quo repellat sint soluta vero vitae voluptatum? A aut, cumque dolor dolorem, dolores eius illum
+        nesciunt non numquam optio quam quia repellendus.</p>
+
+    {{ dump(app.environment) }}
+
+    <ul>
+        <li>
+            <a href="{{ url('recipe.show', {id: 32, slug: 'pates-bolognaises'}) }}">Pâtes bolognaises</a>
+        </li>
+    </ul>
+{% endblock %}
